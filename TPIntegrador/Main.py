@@ -26,9 +26,12 @@ with open("paises.csv", "r",) as file:
         lista_paises.append(dict(fila))
 
 #funcion para ver todo de todos los paises
+
 def ver_paises(lista):
-    for i in lista:
-        print(i)
+   print("\nLISTA DE PAISES")
+   print("-" * 60)
+   for i in lista:
+    print(f"{i['nombre']:15} | Población: {i['poblacion']:10} | Superficie: {i['superficie']:10} | Continente: {i['continente']}")
 
 #funcion para agregar un pais
 def agregar_pais():
@@ -117,27 +120,103 @@ def filtro_superficie():
             if int(i["superficie"])>superficie_min and int(i["superficie"])<superficie_max:
                 print(i)
     print("")
+
+def ordenar_paises():
+    print("Ordenar países por:")
+    print("1 - Nombre")
+    print("2 - Población")
+    print("3 - Superficie (ascendente o descendente)")
+    opcion = int(input("Seleccione una opción: "))
+
+    if opcion == 1:
+        lista_ordenada = sorted(lista_paises, key=lambda x: x["nombre"])
+    elif opcion == 2:
+        lista_ordenada = sorted(lista_paises, key=lambda x: int(x["poblacion"]))
+    elif opcion == 3:
+        sentido = input("¿Desea ordenar de forma descendente? (s/n): ").lower()
+        reversa = True if sentido == "s" else False
+        lista_ordenada = sorted(lista_paises, key=lambda x: int(x["superficie"]), reverse=reversa)
+    else:
+        print("Opción inválida")
+        return
+    
+    print("\n--- Países ordenados ---")
+    for pais in lista_ordenada:
+        print(f"{pais['nombre']:15} | Población: {pais['poblacion']:10} | Superficie: {pais['superficie']:10} | Continente: {pais['continente']}")
+    print("")
+
+# Mostrar estadísticas
+def mostrar_estadisticas():
+    for p in lista_paises:
+        p["poblacion"] = int(p["poblacion"])
+        p["superficie"] = int(p["superficie"])
+    
+    mayor = max(lista_paises, key=lambda x: x["poblacion"])
+    menor = min(lista_paises, key=lambda x: x["poblacion"])
+    promedio_poblacion = sum(p["poblacion"] for p in lista_paises) / len(lista_paises)
+    promedio_superficie = sum(p["superficie"] for p in lista_paises) / len(lista_paises)
+
+    print("\n--- Estadísticas ---")
+    print(f"País con mayor población: {mayor['nombre']} ({mayor['poblacion']})")
+    print(f"País con menor población: {menor['nombre']} ({menor['poblacion']})")
+    print(f"Promedio de población: {promedio_poblacion:.2f}")
+    print(f"Promedio de superficie: {promedio_superficie:.2f}")
+
+    continentes = {}
+    for p in lista_paises:
+        cont = p["continente"]
+        continentes[cont] = continentes.get(cont, 0) + 1
+
+    print("\nCantidad de países por continente:")
+    for c, cantidad in continentes.items():
+        print(f"  {c.capitalize():10}: {cantidad}")
+    print("")
+
+
 #Bucle principal
 while True:
-    print("Seleccione una opcion")
-    opcion=int(input("0-Salir 1-Ver todos los paises 2-Agregar pais 3-buscar pais 4-filtrar 5-ordenar 6-mostrar estadisticas: "))
-    if opcion==0:
-        print("programa finalizado")
+    print("\n" + "=" )
+    print("MENÚ PRINCIPAL - GESTIÓN DE PAÍSES ")
+    print("============================================" )
+    print("1-Ver todos los países")
+    print("2-Agregar país")
+    print("3-Buscar país")
+    print("4-Filtrar países")
+    print("5-Ordenar países")
+    print("6-Mostrar estadísticas")
+    print("0-Salir")
+    print("===========================================" )
+    
+    try:
+        opcion = int(input("Seleccione una opción:"))
+    except ValueError:
+        print("Ingrese un número válido.")
+        continue
+
+    if opcion == 0:
+        print("GRACIAS POR USAR")
+        print("Programa finalizado")
         break
-    elif opcion==1:
+    elif opcion == 1:
         ver_paises(lista_paises)
-    elif opcion==2:
+    elif opcion == 2:
         agregar_pais()
-    elif opcion==3:
+    elif opcion == 3:
         print(buscar_pais())
-    elif opcion==4:
-        print("Ingrese como desea filtrar los paises?")
-        opcion_filtro=int(input("1-continente 2-Rango de poblacion 3-Rango de superficie: "))
-        if opcion_filtro==1:
+    elif opcion == 4:
+        print("Ingrese cómo desea filtrar los países:")
+        opcion_filtro = int(input("1-Continente 2-Rango de población 3-Rango de superficie: "))
+        if opcion_filtro == 1:
             filtro_continente()
-        elif opcion_filtro==2:
+        elif opcion_filtro == 2:
             filtro_poblacion()
-        elif opcion_filtro==3:
+        elif opcion_filtro == 3:
             filtro_superficie()
         else:
-            print("Opcion invalida")
+            print("Opción inválida")
+    elif opcion == 5:
+        ordenar_paises()
+    elif opcion == 6:
+        mostrar_estadisticas()
+    else:
+        print("Opción inválida")
