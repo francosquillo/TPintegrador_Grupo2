@@ -1,26 +1,26 @@
 # TPintegrador_Grupo2
 
-Descripcion del Programa
+DESCRIPCION DEL PROGRAMA
 
 Este programa permite gestionar una base de datos de países utilizando un archivo CSV.
 A través de un menú interactivo, el usuario puede realizar distintas acciones como:
 
-|Ver todos los países cargados
+| Ver todos los países cargados
 
-|Agregar un nuevo país con sus datos
+| Agregar un nuevo país con sus datos
 
-|Buscar un país específico
+| Buscar un país específico
 
-|Filtrar países por continente, población o superficie
+| Filtrar países por continente, población o superficie
 
-||Ordenar los países por nombre, población o superficie
+| Ordenar los países por nombre, población o superficie
 
-|Mostrar estadísticas generales de la base de datos
+| Mostrar estadísticas generales de la base de datos
 
 El programa lee los datos del archivo paises.csv, los convierte en diccionarios y los almacena en una lista para su gestión durante la ejecución.
 
 
-Instrucciones de Uso
+INSTRUCCIONES DE USO
 
 Ejecutar el programa en un entorno Python compatible.
 
@@ -49,7 +49,7 @@ Si se ingresa un valor inválido, el sistema mostrará un mensaje de error y per
 El programa continúa en funcionamiento hasta que el usuario elige la opción 0
 
 
-Ejemplos de Entradas y Salidas
+EJEMPLOS DE ENTRADAS Y SALIDAS
 
 Ejemplo 1: Ver todos los países
 
