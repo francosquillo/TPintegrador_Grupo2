@@ -1,6 +1,7 @@
 # TPintegrador_Grupo2
 
 DESCRIPCION DEL PROGRAMA
+-----------------------------------------------------------------
 
 Este programa permite gestionar una base de datos de países utilizando un archivo CSV.
 A través de un menú interactivo, el usuario puede realizar distintas acciones como:
@@ -21,6 +22,7 @@ El programa lee los datos del archivo paises.csv, los convierte en diccionarios 
 
 
 INSTRUCCIONES DE USO
+----------------------------------------------------------------
 
 Ejecutar el programa en un entorno Python compatible.
 
