@@ -125,9 +125,9 @@ Cantidad de países por continente:
 
 
 Participación de los Integrantes
-
-Integrante      |   	Aporte en el proyecto
 -------------------------------------------------------------------------------------
-Franco Esquillo | Los tres integrantes colaboraron de forma conjunta en el desarrollo del programa,
-Uriel Vega      | distribuyendo tareas y revisando el funcionamiento del código para lograr 
-Elias Perez     | un resultado completo y correcto.
+Los tres integrantes colaboraron de forma conjunta en el desarrollo del programa,
+distribuyendo tareas y revisando el funcionamiento del código para lograr 
+un resultado completo y correcto.
+ 
+TRABAJO REALIZADO POR: Franco Squillo, Uriel Vega y Elias perez 
