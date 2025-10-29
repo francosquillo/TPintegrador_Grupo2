@@ -53,39 +53,39 @@ EJEMPLOS DE ENTRADAS Y SALIDAS
 
 Ejemplo 1: Ver todos los países
 
-|Entrada:
+| Entrada:
 
 Seleccione una opción: 1
 
 
-|Salida esperada:
+| Salida esperada:
 
 LISTA DE PAISES
 ------------------------------------------------------------------------------------
-Argentina     | Población: 45851378  | Superficie: 2736690  | Continente: america
-Australia     | Población: 26974026  | Superficie: 377930   | Continente: oceania
-Kenia         | Población: 57532493  | Superficie: 377930   | Continente: asia
-Japon         | Población: 122905500 | Superficie: 377930   | Continente: asia
-España        | Población: 47800000  | Superficie: 377930   | Continente: europa
+Argentina  | Población: 45851378  | Superficie: 2736690  | Continente: america
+Australia  | Población: 26974026  | Superficie: 377930   | Continente: oceania
+Kenia      | Población: 57532493  | Superficie: 377930   | Continente: asia
+Japon      | Población: 122905500 | Superficie: 377930   | Continente: asia
+España     | Población: 47800000  | Superficie: 377930   | Continente: europa
 ...
 
 
 Ejemplo 2: Buscar un país
 
-|Entrada:
+| Entrada:
 
 Seleccione una opción: 3
 Ingrese el país que desea buscar: Kenia
 
 
-|Salida esperada:
+| Salida esperada:
 
 {'nombre': 'Kenia', 'poblacion': '57532493', 'superficie': '580370', 'continente': 'africa'}
 
 
 Ejemplo 3: Agregar un país
 
-|Entrada:
+| Entrada:
 
 Seleccione una opción: 2
 Ingrese el nombre del país: Chile
@@ -95,19 +95,19 @@ Seleccione el continente:
  1-America 2-Asia 3-Europa 4-Oceania 5-Africa: 1
 
 
-|Salida esperada:
+| Salida esperada:
 
 País añadido con éxito
 
 
 Ejemplo 4: Mostrar estadísticas
 
-|Entrada:
+| Entrada:
 
 Seleccione una opción: 6
 
 
-|Salida esperada:
+| Salida esperada:
 
 --- Estadísticas ---
 País con mayor población: Japón (122905500)
