@@ -110,6 +110,7 @@ Seleccione una opción: 6
 | Salida esperada:
 
 --- Estadísticas ---
+
 País con mayor población: Japón (122905500)
 
 País con menor población: Australia (26974026)
@@ -119,10 +120,15 @@ Promedio de población: 60028079.40
 Promedio de superficie: 2783300.00
 
 Cantidad de países por continente:
+
   America    : 1
+
   Oceania    : 1
+
   Africa     : 1
+
   Asia       : 1
+  
   Europa     : 1
 
 
