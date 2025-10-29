@@ -62,11 +62,11 @@ Seleccione una opción: 1
 
 LISTA DE PAISES
 ------------------------------------------------------------------------------------
-Argentina       | Población: 45851378  | Superficie: 2736690  | Continente: america
-Australia       | Población: 26974026  | Superficie: 377930   | Continente: oceania
-Kenia           | Población: 57532493  | Superficie: 377930   | Continente: asia
-Japon           | Población: 122905500 | Superficie: 377930   | Continente: asia
-España          | Población: 47800000  | Superficie: 377930   | Continente: europa
+Argentina     | Población: 45851378  | Superficie: 2736690  | Continente: america
+Australia     | Población: 26974026  | Superficie: 377930   | Continente: oceania
+Kenia         | Población: 57532493  | Superficie: 377930   | Continente: asia
+Japon         | Población: 122905500 | Superficie: 377930   | Continente: asia
+España        | Población: 47800000  | Superficie: 377930   | Continente: europa
 ...
 
 
