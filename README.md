@@ -73,7 +73,6 @@ Japon        | Población: 122905500 | Superficie: 377930   | Continente: asia
 
 España       | Población: 47800000  | Superficie: 377930   | Continente: europa
 
-...
 
 
 Ejemplo 2: Buscar un país
@@ -105,7 +104,7 @@ Ingrese la superficie del país en KM2: 756102
 
 Seleccione el continente:
 
- 1-America 2-Asia 3-Europa 4-Oceania 5-Africa: 1
+1-America 2-Asia 3-Europa 4-Oceania 5-Africa: 1
 
 
 | Salida esperada:
