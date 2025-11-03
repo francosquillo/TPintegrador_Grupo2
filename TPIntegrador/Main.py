@@ -132,7 +132,7 @@ def filtro_superficie():
                 print(i)
     print("")
 
-# Funcion para ordenar los paises (manteniendo lambda)
+# Funcion para ordenar los paises
 def ordenar_paises():
     print("\nORDENAR PAISES")
     print("1 - Por nombre")
